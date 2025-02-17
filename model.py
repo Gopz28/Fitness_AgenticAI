@@ -4,13 +4,13 @@ from agno.tools.duckduckgo import DuckDuckGoTools
 
 # Initialize the Legal Information Agent
 fitness_agent = Agent(
-    name="Startup Law Agent",
-    role="Provide legal information and procedures for startups",
+    name="Fitness Agent",
+    role="Provide health,diet and work chart for human body devlopment in sports, atheletics,and body building",
     model=Groq(id="llama-3.3-70b-versatile"),
     tools=[DuckDuckGoTools(search=True, news=True)],
     instructions=["Always include sources", 
                 "Provide clear, structured responses", 
-                "Provide details only for Fitness and Dietinge", 
+                "Provide details only for Fitness and Dieting", 
                 "if there is any requirement of tables generate a table view for better viewable format",
                 "Dont respond to the questions which are not related to Fitness and dieting instead of that give them a message of irrelevancy proffesionaly and guide them to ask the question about relavant problem",
                 "Respond only for Fitness and dieting sources if there is any chart for the prompt provide the chart ",
